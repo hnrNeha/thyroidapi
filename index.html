@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="/predictOutput" method="post">
+  <label for="t3measured">t3 measured:</label><br>
+  <input type="text" id=t3measured name="t3measured"><br>
+  <label for="t4u">t4u measured:</label><br>
+  <input type="text" id="t4u" name="t4u"><br>
+  <label for="tumour">tumour:</label><br>
+  <input type="text" id=tumour name="tumour"><br>
+  <label for="tsh">tsh measured:</label><br>
+  <input type="text" id="tsh" name="tsh"><br>
+  <label for="tt4measured">tt4 measured:</label><br>
+  <input type="text" id=tt4measured name="tt4measured"><br>
+  <label for="age">age:</label><br>
+  <input type="text" id="age" name="age"><br>
+  <label for="ftimeasured">fti  measured:</label><br>
+  <input type="text" id=ftimeasured name="ftimeasured"><br>
+  <label for="fti">fti:</label><br>
+  <input type="text" id="fti" name="fti"><br>
+  <label for="pregnant">t3 measured:</label><br>
+  <input type="text" id=pregnant name="pregnant"><br>
+  <label for="t4uu">t4u:</label><br>
+  <input type="text" id="t4uu" name="t4uu"><br>
+  <button type="submit">Submit</button>
+
+
+</form>
+{% if output %}
+{{output}}
+{% endif %}
+
+</body>
+</html>
